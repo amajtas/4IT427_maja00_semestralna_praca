@@ -1,73 +1,33 @@
-# React + TypeScript + Vite
+# Moja zbierka receptov (React SPA)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tento projekt je moderná Single Page Aplikácia vytvorená v knižnici **React** s využitím **TypeScriptu** a buildovacieho nástroja **Vite**. Aplikácia slúži ako osobný katalóg receptov, ktorý umožňuje používateľom prezeranie kategórií, filtrovanie a zobrazenie detailu konkrétneho receptu.
 
-Currently, two official plugins are available:
+## Funkcionality
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+*   **Prehľad receptov:** Zobrazenie všetkých dostupných receptov v responzívnej CSS Grid mriežke.
+*   **Filtrovanie kategórií:** Interaktívny filter na triedenie receptov (napr. Polievky, Hlavné jedlá, Dezerty).
+*   **Detail receptu:** Samostatná stránka s ingredienciami, postupom prípravy a údajmi (čas prípravy, hodnotenie).
+*   **Optimalizácia výkonu:** Využitie `loading="lazy"` pre obrázky, vďaka čomu sa šetria prenášané dáta a urýchľuje sa prvé načítanie stránky.
 
-## React Compiler
+## Technologický stack a architektúra
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*   **Frontend:** React, TypeScript.
+*   **Routing:** `react-router-dom` pre klientský routing, dynamické cesty (`/recipe/:recipeId`) a navigáciu bez znovunačítavania stránky.
+*   **State Management a Hooky:** Využitie lokálneho stavu (`useState`), vedľajších efektov (`useEffect`) a extrakcia logiky do vlastného custom hooku.
+*   **Data Fetching:** Asynchrónne sťahovanie dát cez `fetch` v rámci vlastného hooku `useRecipes`, stavy načítavania: `loading`, `error` a `success`.
+*   **Styling:** Čisté CSS s využitím **dizajn tokenov** pre udržanie konzistencie (farby, typografia, spacing).
+*   **Testovanie:** Automatizované testy využívajúce **Vitest**, **React Testing Library** a **jsdom** .
 
-## Expanding the ESLint configuration
+## Štruktúra projektu
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Projekt využíva type-based štruktúru zložiek:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```text
+src/
+ ├── components/       # Znovupoužiteľné UI komponenty (RecipeCard, FilterBar)
+ ├── pages/            # Komponenty reprezentujúce celé stránky (HomePage, RecipeDetailPage)
+ ├── hooks/            # Vlastné React hooky s oddelenou logikou (useRecipes)
+ ├── utils/            # Pomocné funkcie bez React závislosti (recipeHelpers)
+ ├── types/            # TypeScript interfejsy a typy (recipe.types.ts)
+ ├── services/         # Simulácia API služby / načítavame z JSON
+ └── routes/           # Definícia aplikačných ciest (AppRoutes)
