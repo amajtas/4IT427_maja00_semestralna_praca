@@ -5,7 +5,7 @@ import { fetchRecipes } from "@/services/api";
 export const useRecipes = () => {
     const [recipes, setRecipes] = useState<Recipe[]>([]);
     const [isLoading, setIsLoading] = useState<boolean>(true); // Na začiatku hneď načítavam
-    const [isError, setIsError] = useState<String | null>(null);
+    const [error, setError] = useState<String | null>(null);
 
     //useEffect sa spusti len raz ked sa komponenta prvykrat vykresli na obraozvku
     useEffect(() => {
@@ -15,7 +15,7 @@ export const useRecipes = () => {
                 const data = await fetchRecipes(); //Cakam 1 sek na odpoved
                 setRecipes(data); //Ulozim stiahnute data
             } catch (err) {
-                setIsError('Nepodarilo sa načítať recepty. Skúste to prosím neskôr.');
+                setError('Nepodarilo sa načítať recepty. Skúste to prosím neskôr.');
             } finally {
                 setIsLoading(false); //Load vypnem vzdy, aj ked to prejde/neprejde
             }
@@ -25,5 +25,5 @@ export const useRecipes = () => {
     }, []);
 
     //Hook vrati len to, co komponenty potrebuju na zobrazenie
-    return { recipes, isLoading, isError }
+    return { recipes, isLoading, error }
 }

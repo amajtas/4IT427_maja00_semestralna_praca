@@ -6,7 +6,7 @@ function App() {
   return (
     <BrowserRouter>
       <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
-        <h1>Môj katalóg receptov</h1>
+        <h1>Moja zbierka receptov</h1>
         <hr />
         <AppRoutes />
       </div>

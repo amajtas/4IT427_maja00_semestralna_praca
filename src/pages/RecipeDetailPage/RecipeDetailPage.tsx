@@ -1,11 +1,20 @@
 import { useParams, Link } from "react-router-dom";
-import { mockRecipes } from "@/data/mockRecipes";
+//import { mockRecipes } from "@/data/mockRecipes";
+import { useRecipes } from "@/hooks/useRecipes";
 
 export const RecipeDetailPage = () => {
     const { recipeId } = useParams<{ recipeId: string }>();
 
-    //najdem recept v mock datach podla id
-    const recipe = mockRecipes.find((r) => r.id === recipeId);
+    // //najdem recept v mock datach podla id
+    // const recipe = mockRecipes.find((r) => r.id === recipeId);
+
+    // Namiesto importu hore, zavolam hook useRecipes
+    const { recipes, isLoading, error } = useRecipes();
+    if (isLoading) return <div>Načítavam detail receptu...</div>;
+    if (error) return <div style={{ color: 'red' }}>Chyba: {error}</div>;
+
+    //najdem recept v json podla id
+    const recipe = recipes.find((r) => r.id === recipeId);
 
     //keby id neexistovalo
     if (!recipe) {

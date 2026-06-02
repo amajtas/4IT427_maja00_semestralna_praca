@@ -11,15 +11,15 @@ export const HomePage = () => {
     const [activeCategory, setActiveCategory] = useState<RecipeCategory | 'All'>('All');
 
     //Ziskam data a stavy z hooku
-    const { recipes, isLoading, isError } = useRecipes();
+    const { recipes, isLoading, error } = useRecipes();
 
     //Ukazem loading obrazovku ked sa data nacitaju
     if (isLoading) {
         return <div style={{ fontSize: '20px', padding: '20px' }}>Načítavam recepty</div>;
     }
 
-    if (isError) {
-        return <div style={{ color: 'red', padding: '20px' }}>Chyba: {isError}</div>;
+    if (error) {
+        return <div style={{ color: 'red', padding: '20px' }}>Chyba: {error}</div>;
     }
 
     // Vypočítame vyfiltrované recepty pri každom renderi

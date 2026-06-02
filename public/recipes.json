@@ -1,0 +1,302 @@
+[
+  {
+    "id": "1",
+    "title": "Kapustnica",
+    "category": "Polievky",
+    "rating": 5,
+    "ingredients": ["kvasená kapusta", "klobása", "sušené hríby", "cibuľa", "cesnak", "zemiaky"],
+    "instructions": "Na cibuli orestujeme klobásu, pridáme kapustu, hríby, cesnak a zemiaky. Zalejeme vodou a varíme domäkka.",
+    "timeToCookMinutes": 120,
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk-G6zZ8xYpSUlc7xQBkxJgFx1nXwJ329VKA&s"
+  },
+  {
+    "id": "2",
+    "title": "Kurací vývar s rezancami",
+    "category": "Polievky",
+    "rating": 5,
+    "ingredients": ["kuracie mäso", "mrkva", "petržlen", "zeler", "cibuľa", "rezance"],
+    "instructions": "Mäso a zeleninu pomaly varíme vo vode. Vývar precedíme, pridáme rezance a krátko povaríme.",
+    "timeToCookMinutes": 100,
+    "imageUrl": "https://placehold.co/800x600?text=Kuraci%20vyvar"
+  },
+  {
+    "id": "3",
+    "title": "Paradajková polievka s bazalkou",
+    "category": "Polievky",
+    "rating": 4,
+    "ingredients": ["paradajky", "cibuľa", "cesnak", "bazalka", "olivový olej", "vývar"],
+    "instructions": "Cibuľu a cesnak orestujeme, pridáme paradajky a vývar. Povaríme, rozmixujeme a dochutíme bazalkou.",
+    "timeToCookMinutes": 35,
+    "imageUrl": "https://placehold.co/800x600?text=Paradajkova%20polievka"
+  },
+  {
+    "id": "4",
+    "title": "Cesnaková polievka so syrom",
+    "category": "Polievky",
+    "rating": 4,
+    "ingredients": ["cesnak", "zemiaky", "vývar", "majorán", "strúhaný syr", "krutóny"],
+    "instructions": "Cesnak krátko orestujeme, pridáme zemiaky a vývar. Varíme domäkka, ochutíme majoránom a podávame so syrom.",
+    "timeToCookMinutes": 30,
+    "imageUrl": "https://placehold.co/800x600?text=Cesnakova%20polievka"
+  },
+  {
+    "id": "5",
+    "title": "Šošovicová polievka na kyslo",
+    "category": "Polievky",
+    "rating": 5,
+    "ingredients": ["šošovica", "bobkový list", "zemiaky", "smotana", "ocot", "múka"],
+    "instructions": "Šošovicu uvaríme so zemiakmi a bobkovým listom. Zahustíme smotanou s múkou a dochutíme octom.",
+    "timeToCookMinutes": 50,
+    "imageUrl": "https://placehold.co/800x600?text=Sosovicova%20polievka"
+  },
+  {
+    "id": "6",
+    "title": "Hráškový krém s mätou",
+    "category": "Polievky",
+    "rating": 4,
+    "ingredients": ["hrášok", "cibuľa", "zemiak", "vývar", "smotana", "mäta"],
+    "instructions": "Cibuľu orestujeme, pridáme hrášok, zemiak a vývar. Uvaríme, rozmixujeme so smotanou a mätou.",
+    "timeToCookMinutes": 25,
+    "imageUrl": "https://placehold.co/800x600?text=Hraskovy%20krem"
+  },
+  {
+    "id": "7",
+    "title": "Tekvicová polievka so zázvorom",
+    "category": "Polievky",
+    "rating": 5,
+    "ingredients": ["tekvica hokkaido", "cibuľa", "zázvor", "vývar", "smotana", "tekvicové semienka"],
+    "instructions": "Tekvicu nakrájame a uvaríme s cibuľou, zázvorom a vývarom. Rozmixujeme, zjemníme smotanou a posypeme semienkami.",
+    "timeToCookMinutes": 40,
+    "imageUrl": "https://placehold.co/800x600?text=Tekvicova%20polievka"
+  },
+  {
+    "id": "8",
+    "title": "Gulášová polievka",
+    "category": "Polievky",
+    "rating": 5,
+    "ingredients": ["hovädzie mäso", "zemiaky", "cibuľa", "mletá paprika", "cesnak", "majorán"],
+    "instructions": "Cibuľu orestujeme, pridáme mäso a papriku. Dusíme, zalejeme vodou, pridáme zemiaky a varíme domäkka.",
+    "timeToCookMinutes": 90,
+    "imageUrl": "https://placehold.co/800x600?text=Gulasova%20polievka"
+  },
+  {
+    "id": "9",
+    "title": "Brokolicová krémová polievka",
+    "category": "Polievky",
+    "rating": 4,
+    "ingredients": ["brokolica", "zemiak", "cibuľa", "vývar", "smotana", "čierne korenie"],
+    "instructions": "Brokolicu, zemiak a cibuľu uvaríme vo vývare. Rozmixujeme, pridáme smotanu a dochutíme.",
+    "timeToCookMinutes": 30,
+    "imageUrl": "https://placehold.co/800x600?text=Brokolicova%20polievka"
+  },
+  {
+    "id": "10",
+    "title": "Fazuľová polievka s údeným mäsom",
+    "category": "Polievky",
+    "rating": 5,
+    "ingredients": ["fazuľa", "údené mäso", "mrkva", "zemiaky", "cesnak", "bobkový list"],
+    "instructions": "Fazuľu namočíme, potom varíme s údeným mäsom a zeleninou. Dochutíme cesnakom a bobkovým listom.",
+    "timeToCookMinutes": 110,
+    "imageUrl": "https://placehold.co/800x600?text=Fazulova%20polievka"
+  },
+  {
+    "id": "11",
+    "title": "Bryndzové halušky so slaninou",
+    "category": "Hlavné jedlá",
+    "rating": 5,
+    "ingredients": ["zemiaky", "múka", "vajce", "bryndza", "slanina", "soľ"],
+    "instructions": "Zo zemiakov, múky a vajca pripravíme cesto. Halušky uvaríme, premiešame s bryndzou a posypeme opečenou slaninou.",
+    "timeToCookMinutes": 45,
+    "imageUrl": "https://placehold.co/800x600?text=Bryndzove%20halusky"
+  },
+  {
+    "id": "12",
+    "title": "Kurací paprikáš s haluškami",
+    "category": "Hlavné jedlá",
+    "rating": 5,
+    "ingredients": ["kuracie stehná", "cibuľa", "mletá paprika", "smotana", "múka", "halušky"],
+    "instructions": "Kuracie mäso dusíme na cibuli a paprike. Omáčku zjemníme smotanou a podávame s haluškami.",
+    "timeToCookMinutes": 60,
+    "imageUrl": "https://placehold.co/800x600?text=Kuraci%20paprikas"
+  },
+  {
+    "id": "13",
+    "title": "Segedínsky guláš",
+    "category": "Hlavné jedlá",
+    "rating": 5,
+    "ingredients": ["bravčové mäso", "kvasená kapusta", "cibuľa", "mletá paprika", "smotana", "knedľa"],
+    "instructions": "Mäso dusíme na cibuli a paprike, pridáme kapustu a varíme domäkka. Zjemníme smotanou a podávame s knedľou.",
+    "timeToCookMinutes": 85,
+    "imageUrl": "https://placehold.co/800x600?text=Segedinsky%20gulas"
+  },
+  {
+    "id": "14",
+    "title": "Vyprážaný syr so zemiakmi",
+    "category": "Hlavné jedlá",
+    "rating": 4,
+    "ingredients": ["tvrdý syr", "vajcia", "múka", "strúhanka", "zemiaky", "tatárska omáčka"],
+    "instructions": "Syr obalíme v trojobale a vypražíme dozlatista. Podávame s varenými zemiakmi a tatárskou omáčkou.",
+    "timeToCookMinutes": 35,
+    "imageUrl": "https://placehold.co/800x600?text=Vyprazany%20syr"
+  },
+  {
+    "id": "15",
+    "title": "Rizoto s kuracím mäsom a hráškom",
+    "category": "Hlavné jedlá",
+    "rating": 4,
+    "ingredients": ["ryža", "kuracie prsia", "hrášok", "cibuľa", "vývar", "parmezán"],
+    "instructions": "Kuracie mäso orestujeme, pridáme ryžu a vývar. Varíme za miešania, pridáme hrášok a parmezán.",
+    "timeToCookMinutes": 40,
+    "imageUrl": "https://placehold.co/800x600?text=Kuracie%20rizoto"
+  },
+  {
+    "id": "16",
+    "title": "Špagety Bolognese",
+    "category": "Hlavné jedlá",
+    "rating": 5,
+    "ingredients": ["špagety", "mleté hovädzie mäso", "paradajky", "cibuľa", "cesnak", "parmezán"],
+    "instructions": "Mäso orestujeme s cibuľou a cesnakom, pridáme paradajky a dusíme. Podávame so špagetami a parmezánom.",
+    "timeToCookMinutes": 50,
+    "imageUrl": "https://placehold.co/800x600?text=Spagety%20Bolognese"
+  },
+  {
+    "id": "17",
+    "title": "Pečené kurča s ryžou",
+    "category": "Hlavné jedlá",
+    "rating": 5,
+    "ingredients": ["kurča", "ryža", "maslo", "cesnak", "mletá paprika", "soľ"],
+    "instructions": "Kurča ochutíme, potrieme maslom a pečieme dozlatista. Ryžu uvaríme osobitne a podávame spolu.",
+    "timeToCookMinutes": 90,
+    "imageUrl": "https://placehold.co/800x600?text=Pecene%20kurca"
+  },
+  {
+    "id": "18",
+    "title": "Losos s citrónovým maslom",
+    "category": "Hlavné jedlá",
+    "rating": 5,
+    "ingredients": ["losos", "maslo", "citrón", "cesnak", "kôpor", "zemiaky"],
+    "instructions": "Lososa osolíme, opečieme na masle s cesnakom a citrónom. Podávame so zemiakmi a kôprom.",
+    "timeToCookMinutes": 30,
+    "imageUrl": "https://placehold.co/800x600?text=Losos%20s%20citronom"
+  },
+  {
+    "id": "19",
+    "title": "Zeleninové kari s kokosovým mliekom",
+    "category": "Hlavné jedlá",
+    "rating": 4,
+    "ingredients": ["cuketa", "mrkva", "paprika", "kari pasta", "kokosové mlieko", "ryža"],
+    "instructions": "Zeleninu orestujeme, pridáme kari pastu a kokosové mlieko. Dusíme domäkka a podávame s ryžou.",
+    "timeToCookMinutes": 35,
+    "imageUrl": "https://placehold.co/800x600?text=Zeleninove%20kari"
+  },
+  {
+    "id": "20",
+    "title": "Plnená paprika v paradajkovej omáčke",
+    "category": "Hlavné jedlá",
+    "rating": 5,
+    "ingredients": ["paprika", "mleté mäso", "ryža", "paradajkový pretlak", "cibuľa", "cukor"],
+    "instructions": "Papriky naplníme zmesou mäsa a ryže. Varíme v paradajkovej omáčke, kým mäso a ryža nezmäknú.",
+    "timeToCookMinutes": 75,
+    "imageUrl": "https://placehold.co/800x600?text=Plnena%20paprika"
+  },
+  {
+    "id": "21",
+    "title": "Zapekané cestoviny so syrom",
+    "category": "Hlavné jedlá",
+    "rating": 4,
+    "ingredients": ["cestoviny", "šunka", "syr", "smotana", "vajcia", "kukurica"],
+    "instructions": "Uvarené cestoviny zmiešame so šunkou, syrom, smotanou, vajcami a kukuricou. Zapečieme dozlatista.",
+    "timeToCookMinutes": 45,
+    "imageUrl": "https://placehold.co/800x600?text=Zapekane%20cestoviny"
+  },
+  {
+    "id": "22",
+    "title": "Hovädzí guláš s knedľou",
+    "category": "Hlavné jedlá",
+    "rating": 5,
+    "ingredients": ["hovädzie mäso", "cibuľa", "mletá paprika", "cesnak", "majorán", "knedľa"],
+    "instructions": "Mäso dusíme na veľkom množstve cibule s paprikou a cesnakom. Varíme domäkka a podávame s knedľou.",
+    "timeToCookMinutes": 120,
+    "imageUrl": "https://placehold.co/800x600?text=Hovadzi%20gulas"
+  },
+  {
+    "id": "23",
+    "title": "Zemiakové placky",
+    "category": "Hlavné jedlá",
+    "rating": 4,
+    "ingredients": ["zemiaky", "cesnak", "vajcia", "múka", "majorán", "olej"],
+    "instructions": "Nastrúhané zemiaky zmiešame s cesnakom, vajcami, múkou a majoránom. Placky vyprážame do chrumkava.",
+    "timeToCookMinutes": 35,
+    "imageUrl": "https://placehold.co/800x600?text=Zemiakove%20placky"
+  },
+  {
+    "id": "24",
+    "title": "Tofu stir-fry so zeleninou",
+    "category": "Hlavné jedlá",
+    "rating": 4,
+    "ingredients": ["tofu", "brokolica", "paprika", "sójová omáčka", "cesnak", "ryža"],
+    "instructions": "Tofu opečieme dozlatista, pridáme zeleninu, cesnak a sójovú omáčku. Krátko restujeme a podávame s ryžou.",
+    "timeToCookMinutes": 30,
+    "imageUrl": "https://placehold.co/800x600?text=Tofu%20stir%20fry"
+  },
+  {
+    "id": "25",
+    "title": "Jablková štrúdľa",
+    "category": "Dezerty",
+    "rating": 5,
+    "ingredients": ["lístkové cesto", "jablká", "cukor", "škorica", "strúhanka", "vajce"],
+    "instructions": "Cesto naplníme jablkami so škoricou, cukrom a strúhankou. Zavinieme, potrieme vajcom a upečieme.",
+    "timeToCookMinutes": 45,
+    "imageUrl": "https://placehold.co/800x600?text=Jablkova%20strudla"
+  },
+  {
+    "id": "26",
+    "title": "Palacinky s džemom",
+    "category": "Dezerty",
+    "rating": 5,
+    "ingredients": ["múka", "mlieko", "vajcia", "cukor", "olej", "džem"],
+    "instructions": "Z múky, mlieka, vajec a cukru pripravíme cesto. Palacinky upečieme na panvici a naplníme džemom.",
+    "timeToCookMinutes": 30,
+    "imageUrl": "https://placehold.co/800x600?text=Palacinky"
+  },
+  {
+    "id": "27",
+    "title": "Tvarohové guľky s jahodami",
+    "category": "Dezerty",
+    "rating": 5,
+    "ingredients": ["tvaroh", "krupica", "vajce", "jahody", "strúhanka", "maslo"],
+    "instructions": "Z tvarohu, krupice a vajca pripravíme cesto. Guľky naplníme jahodami, uvaríme a obalíme v strúhanke.",
+    "timeToCookMinutes": 40,
+    "imageUrl": "https://placehold.co/800x600?text=Tvarohove%20gulky"
+  },
+  {
+    "id": "28",
+    "title": "Čokoládový brownies",
+    "category": "Dezerty",
+    "rating": 5,
+    "ingredients": ["čokoláda", "maslo", "cukor", "vajcia", "múka", "kakao"],
+    "instructions": "Čokoládu rozpustíme s maslom, pridáme ostatné suroviny a premiešame. Pečieme pri 180°C približne 25 minút.",
+    "timeToCookMinutes": 35,
+    "imageUrl": "https://placehold.co/800x600?text=Cokoladovy%20brownies"
+  },
+  {
+    "id": "29",
+    "title": "Ryžový nákyp s ovocím",
+    "category": "Dezerty",
+    "rating": 4,
+    "ingredients": ["ryža", "mlieko", "vajcia", "cukor", "maslo", "kompótové ovocie"],
+    "instructions": "Ryžu uvaríme v mlieku, zmiešame so žĺtkami a cukrom. Pridáme ovocie, sneh z bielkov a zapečieme.",
+    "timeToCookMinutes": 60,
+    "imageUrl": "https://placehold.co/800x600?text=Ryzovy%20nakyp"
+  },
+  {
+    "id": "30",
+    "title": "Panna cotta s malinami",
+    "category": "Dezerty",
+    "rating": 4,
+    "ingredients": ["smotana", "cukor", "želatína", "vanilka", "maliny", "citrónová šťava"],
+    "instructions": "Smotanu zohrejeme s cukrom a vanilkou, pridáme želatínu a nalejeme do formičiek. Po stuhnutí podávame s malinami.",
+    "timeToCookMinutes": 20,
+    "imageUrl": "https://placehold.co/800x600?text=Panna%20cotta"
+  }
+]
