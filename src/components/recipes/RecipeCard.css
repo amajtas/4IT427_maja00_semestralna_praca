@@ -1,0 +1,70 @@
+.recipe-card {
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  overflow: hidden; /* Zabezpečí, že obrázok nepresiahne zaoblené rohy */
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Aby boli všetky karty v riadku rovnako vysoké */
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+}
+
+.recipe-card:hover {
+  transform: translateY(-4px); 
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary-hover);
+}
+
+.card-image-wrapper {
+  height: 200px;
+  width: 100%;
+  background-color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.card-content {
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; 
+}
+
+.card-category {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-primary); 
+  margin-bottom: var(--spacing-sm);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-main);
+  line-height: 1.3;
+}
+
+.card-footer {
+  margin-top: auto; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.card-stars {
+  color: #FBBF24; 
+  letter-spacing: 2px;
+}

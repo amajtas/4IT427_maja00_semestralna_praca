@@ -1,4 +1,5 @@
 import type { RecipeCategory } from "@/types/recipe.types";
+import "./FilterBar.css";
 
 interface FilterBarProps {
     activeCategory: RecipeCategory | 'All';
@@ -10,14 +11,12 @@ export const FilterBar = ({ activeCategory, onCategoryChange }: FilterBarProps) 
     const categories: (RecipeCategory | 'All')[] = ['All', 'Polievky', 'Hlavné jedlá', 'Dezerty'];
 
     return (
-        <div>
+        <div className="filter-bar">
             {categories.map((category) => (
                 <button key={category}
                     onClick={() => onCategoryChange(category)}
-                    style={{
-                        fontWeight: activeCategory === category ? 'bold' : 'normal',
-                        border: activeCategory === category ? '2px solid black' : '1px solid gray'
-                    }}> {category === 'All' ? 'Všetky recepty' : category}
+                    className={`filter-button ${activeCategory === category ? 'active' : ''}`}>
+                    {category === 'All' ? 'Všetky recepty' : category}
                 </button>
             ))}
         </div>

@@ -5,6 +5,7 @@ import { FilterBar } from "@/components/recipes/FilterBar";
 import { useRecipes } from "@/hooks/useRecipes"; //ziskanie dat
 import { filterRecipesByCategory } from "@/utils/recipeHelpers";
 import type { RecipeCategory } from "@/types/recipe.types";
+import "./HomePage.css";
 
 export const HomePage = () => {
     // State na uchovanie aktuálne vybranej kategórie
@@ -15,25 +16,25 @@ export const HomePage = () => {
 
     //Ukazem loading obrazovku ked sa data nacitaju
     if (isLoading) {
-        return <div style={{ fontSize: '20px', padding: '20px' }}>Načítavam recepty</div>;
+        return <div className="empty-state">Načítavam recepty</div>;
     }
 
     if (error) {
-        return <div style={{ color: 'red', padding: '20px' }}>Chyba: {error}</div>;
+        return <div className="empty-state" style={{ color: 'red' }}>Chyba: {error}</div>;
     }
 
     // Vypočítame vyfiltrované recepty pri každom renderi
     const filteredRecipes = filterRecipesByCategory(recipes, activeCategory);
 
     return (
-        <div>
+        <div className="home-page">
             <FilterBar activeCategory={activeCategory} onCategoryChange={setActiveCategory} />
-            <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
+            <div className="recipe-grid">
                 {filteredRecipes.length > 0 ? (
                     filteredRecipes.map((recipe) => (
                         <RecipeCard key={recipe.id} recipe={recipe} />
                     ))
-                ) : (<p>V tejto kategórii zatiaľ nie sú žiadne recepty.</p>
+                ) : (<div className="empty-state">V tejto kategórii zatiaľ nie sú žiadne recepty.</div>
                 )}
             </div>
         </div>

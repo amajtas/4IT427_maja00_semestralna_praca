@@ -1,6 +1,6 @@
 import type { Recipe } from "@/types/recipe.types";
 import { Link } from "react-router-dom";
-
+import "./RecipeCard.css";
 interface RecipeCardProps {
     recipe: Recipe;
 }
@@ -14,24 +14,33 @@ export const RecipeCard = ({ recipe }: RecipeCardProps) => {
     };
 
     return (
-        <Link to={`/recipe/${id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-            <div>
+        <Link to={`/recipe/${id}`} className="recipe-card">
+            <div className="card-image-wrapper">
                 {/* Ak máme obrázok zobrazíme ho - inak "Bez obrázka". */}
                 {imageUrl ? (
-                    <img src={imageUrl} alt={`Obrázok k receptu ${title}`} />
-                ) : (<div>Bez obrázka</div>)
+                    <img
+                        src={imageUrl}
+                        alt={`Obrázok k receptu ${title}`}
+                        className="card-image"
+                        loading="lazy"
+                    />
+                ) : (<span>Bez obrázka</span>)
                 }
-                <div>
-                    <span>{category}</span>
-                    <h3>{title}</h3>
-                    <div>
-                        <span title={`Hodnotenie: ${rating} z 5`}>{renderStars(rating)}</span>
-                        {timeToCookMinutes && (
-                            <span>{timeToCookMinutes} minút</span>
-                        )}
-                    </div>
+            </div>
+
+            <div className="card-content">
+                <span className="card-category">{category}</span>
+                <h3 className="card-title">{title}</h3>
+                <div className="card-footer">
+                    <span className="card-stars" title={`Hodnotenie: ${rating} z 5`}>
+                        {renderStars(rating)}
+                    </span>
+                    {timeToCookMinutes && (
+                        <span>⏱ {timeToCookMinutes} minút</span>
+                    )}
                 </div>
             </div>
+
         </Link>
     );
 };

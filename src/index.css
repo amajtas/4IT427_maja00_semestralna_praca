@@ -1,0 +1,55 @@
+/* --- DESIGN TOKENS --- */
+:root {
+  /* Farby */
+  --color-primary: #7851A9;        /* Hlavný akcent - Royal Purple */
+  --color-primary-hover: #5e3b8e;  /* Tmavšia fialová pre hover efekty */
+  --color-bg-main: #fcfcfc;        /* Veľmi jemná sivobiela pre pozadie */
+  --color-bg-card: #ffffff;        /* Čistá biela pre kartičky */
+  --color-text-main: #1f2937;      /* Tmavosivá pre text (lepšie sa číta ako čistá čierna) */
+  --color-text-muted: #6b7280;     /* Svetlejšia sivá pre doplňujúce texty */
+  --color-border: #e5e7eb;         /* Jemná sivá pre čiary a okraje */
+
+  /* Typografia */
+  --font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  /* Medzery */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Zaoblenie a Tiene */
+  --radius-md: 12px;
+  --radius-sm: 8px;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+  
+  /* Plynulé prechody */
+  --transition-fast: 0.2s ease-in-out;
+}
+
+/* --- GLOBAL RESET A ZÁKLADY --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--color-bg-main);
+  color: var(--color-text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Odkazy */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  line-height: 1.2;
+}

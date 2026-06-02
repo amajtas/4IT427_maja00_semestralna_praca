@@ -1,0 +1,46 @@
+.filter-bar {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap; 
+  margin-bottom: var(--spacing-xl);
+  justify-content: center; 
+}
+
+.filter-button {
+  padding: 8px 20px;
+  border-radius: 9999px; 
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg-card);
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  font-family: inherit; 
+}
+
+.filter-button:hover:not(.active) {
+  background-color: #f3f4f6; 
+  color: var(--color-text-main);
+  transform: translateY(-1px);
+}
+
+/* Trieda pre práve vybranú kategóriu */
+.filter-button.active {
+  background-color: var(--color-primary); /* Kráľovská fialová */
+  color: #ffffff; /* Biely text na tmavom pozadí */
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-sm);
+  font-weight: 600;
+}
+
+/* Odstránenie defaultného obrysu po kliknutí */
+.filter-button:focus {
+  outline: none;
+}
+
+/* pridáme fialový obrys len pri navigácii klávesnicou */
+.filter-button:focus-visible {
+  outline: 2px solid var(--color-primary-hover);
+  outline-offset: 2px;
+}
